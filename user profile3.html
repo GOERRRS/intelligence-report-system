@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/profile3.css"/>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intelligence Report System</title>
+</head>
+<body>
+    <div class="desktop">
+        <nav>
+            <img src="images/logo1.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Information List</a></li>
+                <li><a href="#">Information Report</a></li>
+            </ul>
+            <img src="images/image 10.png" class="user-pic" onclick="toggleMenu()">
+
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="images/image 10.png">
+                        <h2>User Name</h2>
+                    </div>
+                    <hr>
+                    
+                    <a href ="#" class="sub-menu-link">
+                        <img src="images/image 12.png">
+                        <p>Manage Profile</p>
+                        <span>></span>
+                    <a href ="#" class="sub-menu-link">
+                        <img src="images/image 13.png">
+                        <p>Settings & Privacy</p>
+                        <span>></span>
+                    </a>
+                    <a href ="#" class="sub-menu-link">
+                        <img src="images/image 11.png">
+                        <p>Contact</p>
+                        <span>></span>
+                    </a>
+                    </a>
+                    <a href ="#" class="sub-menu-link">
+                        <img src="images/image 14.png">
+                        <p>Logout</p>
+                        <span>></span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div class="desktop2">
+            <form>
+                <div class="row">
+                    <div class ="input-group">
+                        <input type="text" id="First Name" required>
+                        <label for="name"><i class="fa-solid fa-user"></i> First Name</label>
+                    </div>
+                    <div class ="input-group">
+                        <input type="text" id="Family Name" required>
+                        <label for="name"><i class="fa-solid fa-user"></i> Family Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class ="input-group">
+                        <input type="text" id="Age" required>
+                        <label for="age">Age</label>
+                    </div>
+                    <div class ="input-group">
+                        <input type="text" id="Gender" required>
+                        <label for="gender"><i class="fa-solid fa-venus-mars"></i> Gender</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class ="input-group">
+                        <input type="text" id="Date of Birth" required>
+                        <label for="date of birth"><i class="fa-regular fa-calendar"></i> Date of Birth</label>
+                    </div>
+                    <div class ="input-group">
+                        <input type="text" id="Place of Birth" required>
+                        <label for="place of birth">Place of Birth</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class ="input-group">
+                        <input type="text" id="Adress" required>
+                        <label for="address">Address</label>
+                    </div>
+                    <div class ="input-group">
+                        <input type="text" id="Nationality" required>
+                        <label for="nationality">Nationality</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class ="input-group">
+                        <input type="text" id="Civil Status" required>
+                        <label for="civil status">Civil Status</label>
+                    </div>
+                    <div class ="input-group">
+                        <input type="text" id="Phone Number" required>
+                        <label for="phone number">Phone Number</label>
+                    </div>
+                </div>
+                <div class ="input-group">
+                    <input type="text" id="Email" required>
+                    <label for="email">Email Address</label>
+                </div>
+                <div class ="input-group">
+                    <input type="text" id="Password" required>
+                    <label for="password">Password</label>
+                </div>
+                <button type="update">Update</button>
+            </form>
+        </div>
+    </div>
+    
+    
+
+    <script>
+        let subMenu = document.getElementById("subMenu")
+
+        function toggleMenu(){
+            subMenu.classList.toggle("open-menu");
+        }
+    </script>
+</body>
+</html>
